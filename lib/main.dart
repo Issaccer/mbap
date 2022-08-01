@@ -9,7 +9,6 @@ import 'package:fooddash/screens/homescreen.dart';
 import 'package:fooddash/services/firestore_service.dart';
 // import 'package:mbap_project/screens/restaurantdetails.dart';
 
-
 void main() {
   runApp(MyApp());
 }
