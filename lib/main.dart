@@ -5,7 +5,6 @@ import 'package:fooddash/screens/add_favourites_screen.dart';
 import 'package:fooddash/screens/cuisines_screen.dart';
 import 'package:fooddash/screens/edit_favourites_screen.dart';
 import 'package:fooddash/screens/favourites_list_screen.dart';
-import 'package:fooddash/screens/homescreen.dart';
 import 'package:fooddash/services/firestore_service.dart';
 // import 'package:mbap_project/screens/restaurantdetails.dart';
 
