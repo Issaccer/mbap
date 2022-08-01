@@ -8,6 +8,7 @@ import 'package:fooddash/screens/favourites_list_screen.dart';
 import 'package:fooddash/screens/homescreen.dart';
 import 'package:fooddash/services/firestore_service.dart';
 // import 'package:mbap_project/screens/restaurantdetails.dart';
+import 'models/subject.dart';
 
 void main() {
   runApp(MyApp());
