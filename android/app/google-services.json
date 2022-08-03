@@ -1,34 +1,33 @@
 {
   "project_info": {
-    "project_number": "577055012394",
-    "firebase_url": "https://mbap-eddae-default-rtdb.firebaseio.com",
-    "project_id": "mbap-eddae",
-    "storage_bucket": "mbap-eddae.appspot.com"
+    "project_number": "299411513165",
+    "project_id": "food-dash-38b35",
+    "storage_bucket": "food-dash-38b35.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:577055012394:android:d6e22a756cdef24fdbf553",
+        "mobilesdk_app_id": "1:299411513165:android:e6f9620809f2077048e104",
         "android_client_info": {
-          "package_name": "com.example.mbap"
+          "package_name": "com.example.fooddash"
         }
       },
       "oauth_client": [
         {
-          "client_id": "577055012394-heoi70i907tvr5ftks8hm60iah861634.apps.googleusercontent.com",
+          "client_id": "299411513165-88irq3m4knjf50c0tiphqdi4ore4mo78.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCygDiT1mXegicW8sz6oaXtxI1BiEmdcrM"
+          "current_key": "AIzaSyDg-CcS8vJ6CV48IFjQuMKPyT9aEGqZR7Q"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "577055012394-heoi70i907tvr5ftks8hm60iah861634.apps.googleusercontent.com",
+              "client_id": "299411513165-88irq3m4knjf50c0tiphqdi4ore4mo78.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

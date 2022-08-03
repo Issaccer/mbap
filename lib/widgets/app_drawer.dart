@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:fooddash/screens/profilescreen.dart';
 import '../main.dart';
 import '../screens/favourites_list_screen.dart';
 import '../screens/homescreen.dart';
@@ -25,8 +26,13 @@ class AppDrawer extends StatelessWidget {
         title: Text('Favourites'),
         onTap: ()=> Navigator.of(context).pushReplacementNamed(FavouritesListScreen.routeName),
       ),
-      Divider(height: 3, color: Colors.blueGrey
-      )],
+      Divider(height: 3, color: Colors.blueGrey),
+        ListTile(
+          leading: Icon(Icons.account_circle),
+          title: Text('Profile'),
+          onTap: ()=> Navigator.of(context).pushReplacementNamed(ProfileScreen.routeName),
+        ),
+      ],
       ),
     );
   }
