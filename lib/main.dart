@@ -82,7 +82,7 @@ class _MainScreenState extends State<MainScreen> {
           else {}
             return Scaffold(
               resizeToAvoidBottomInset: false,
-              backgroundColor: Colors.transparent,
+              // backgroundColor: Colors.transparent,
               appBar: AppBar(
                 title: Text('Food Dash'),
               ),

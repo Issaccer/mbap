@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../screens/homescreen.dart';
 import '../services/auth_service.dart';
 
 class LoginForm extends StatefulWidget {
@@ -75,7 +76,7 @@ class _LoginFormState extends State<LoginForm> {
             },
           ),
           SizedBox(height: 20),
-          ElevatedButton(onPressed: () { login(); }, child: Text('Login')),
+          ElevatedButton(onPressed: () { login(); Navigator.of(context).pushNamed(HomeScreen.routeName); }, child: Text('Login')),
         ],
       ),
     );

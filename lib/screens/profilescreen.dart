@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:fooddash/main.dart';
 
 import '../services/auth_service.dart';
 
@@ -24,10 +25,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
       Text('Logout successfully!'),));
     }).catchError((error) {
       FocusScope.of(context).unfocus();
-      String message = error.toString;
-      ScaffoldMessenger.of(context).hideCurrentSnackBar();
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content:
-      Text(message),));
+      // String message = error.toString;
+      // ScaffoldMessenger.of(context).hideCurrentSnackBar();
+      // ScaffoldMessenger.of(context).showSnackBar(SnackBar(content:
+      // Text(message),));
     });
   }
 
@@ -43,10 +44,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text('Hello ' + widget.currentUser.email! + '!'),
+              Text('Hello'),
               SizedBox(height:20),
               ElevatedButton(
-                  onPressed: () { logOut();},
+                  onPressed: () { logOut(); Navigator.of(context).pushNamed(MainScreen.routeName);},
                   child: Text('Log out')
               )],
           ),
