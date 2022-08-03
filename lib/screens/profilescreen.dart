@@ -6,8 +6,8 @@ import '../services/auth_service.dart';
 class ProfileScreen extends StatefulWidget {
   static String routeName = '/profile';
 
-  User currentUser;
-  MainScreen(this.currentUser);
+  // User currentUser;
+  // MainScreen(this.currentUser);
 
   @override
   State<ProfileScreen> createState() => _ProfileScreenState();
