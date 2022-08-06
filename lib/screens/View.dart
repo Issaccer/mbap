@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:fooddash/screens/menus_screens.dart';
 import '../models/subject.dart';
 
 class View extends StatefulWidget {
@@ -35,13 +36,16 @@ class _ViewState extends State<View> {
           mainAxisAlignment: MainAxisAlignment.center,
             children:[
               Image.network(selectedRestaurantList.image, height: 150,),
-              TextFormField(
-                textAlign: TextAlign.center,
-                initialValue: selectedRestaurantList.Name,),
-        ],
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, MenusScreen.routeName);
+                },
+                child: Text(selectedRestaurantList.Name),
         ),
+        ],
       ),
-      ],
+      ),
+        ],
     ),
       ),
     );

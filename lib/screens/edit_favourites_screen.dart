@@ -57,22 +57,17 @@ class _EditFavouritesScreenState extends State<EditFavouritesScreen> {
             children: [
               DropdownButtonFormField(
                 value: selectedExpense.mode,
-                decoration: const InputDecoration(
-                  label: const Text('Restaurants'),
+                decoration: InputDecoration(
+                  label: Text('Restaurants'),
                 ),
                 items: [
-                  const DropdownMenuItem(child: Text('Bus'), value: 'bus'),
-                  const DropdownMenuItem(child: Text('Grab'), value: 'grab'),
-                  const DropdownMenuItem(child: const Text('MRT'), value: 'mrt'),
-                  const DropdownMenuItem(child: const Text('Taxi'), value: 'taxi'),
+                  DropdownMenuItem(child: Text('Genki Sushi'), value: 'genkisushi'),
+                  DropdownMenuItem(child: Text('Thai Dynasty'), value: 'thaidynasty'),
+                  DropdownMenuItem(child: Text('Shake Shack'), value: 'shakeshack'),
+                  DropdownMenuItem(child: Text('Starbucks'), value: 'starbucks'),
+                  DropdownMenuItem(child: Text('Koi'), value: 'koi'),
+                  DropdownMenuItem(child: Text('Astons Specialties'), value: 'astonsspecialties'),
                 ],
-                validator: (value){
-                  if(value == null){
-                    return "Please select a restaurant.";
-                  } else{
-                    return null;
-                  }
-                },
                 onChanged: (value) { mode = value as String;},
                 onSaved: (value) { mode = value as String; },
               ),

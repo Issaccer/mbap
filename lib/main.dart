@@ -7,6 +7,7 @@ import 'package:fooddash/screens/cuisines_screen.dart';
 import 'package:fooddash/screens/edit_favourites_screen.dart';
 import 'package:fooddash/screens/favourites_list_screen.dart';
 import 'package:fooddash/screens/homescreen.dart';
+import 'package:fooddash/screens/menus_screens.dart';
 import 'package:fooddash/screens/profilescreen.dart';
 import 'package:fooddash/services/firestore_service.dart';
 // import 'package:mbap_project/screens/restaurantdetails.dart';
@@ -51,6 +52,7 @@ class _MyAppState extends State<MyApp> {
             View.routeName : (_) { return View(); },
             ProfileScreen.routeName : (_) { return ProfileScreen(); },
             ResetPasswordScreen.routeName : (_) { return ResetPasswordScreen(); },
+            MenusScreen.routeName : (_) { return MenusScreen(); },
             // RestaurantsDetails.routeName : (_) { return RestaurantsDetails(); },
       }
     );

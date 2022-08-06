@@ -13,10 +13,20 @@ class FirestoreService{
         .toList());
   }
 
+  Stream<List<Menus>> getMenus(Cuisines) {
+    return FirebaseFirestore.instance
+        .collection('menus')
+        .where(Cuisines)
+        .snapshots()
+        .map((snapshot) => snapshot.docs
+        .map<Menus>((doc) => Menus.fromMap(doc.data(), doc.id))
+        .toList());
+  }
+
   addFavourites(purpose, mode) {
     return FirebaseFirestore.instance
         .collection('favourites')
-        .add({'purpose': purpose, 'mode': mode});
+        .add({'feedback': purpose, 'Restaurant': mode});
   }
   removeFavourites(id) {
     return FirebaseFirestore.instance
@@ -36,6 +46,6 @@ class FirestoreService{
     return FirebaseFirestore.instance
         .collection('favourites')
         .doc(id)
-        .set({'purpose': purpose, 'mode': mode});
+        .update({'feedback': purpose, 'Restaurant': mode});
   }
 }

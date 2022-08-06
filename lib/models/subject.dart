@@ -14,6 +14,22 @@ class Restaurants {
         image = snapshot['image'] ?? '',
         imagebanner = snapshot['imagebanner'] ?? '';
 }
+class Menus {
+  String id;
+  String Name;
+  String Cuisines;
+  String imagebanner;
+  String image;
+  Menus({required this.id, required this.Name, required
+  this.Cuisines, required this.image, required this.imagebanner});
+
+  Menus.fromMap(Map <String, dynamic> snapshot, String id) :
+        id = id,
+        Name = snapshot['Name'] ?? '',
+        Cuisines = snapshot['Cuisines'] ?? '',
+        imagebanner = snapshot['imagebanner'] ?? '',
+        image = snapshot['image'] ?? '';
+}
 class Favourites {
   String id;
   String purpose;

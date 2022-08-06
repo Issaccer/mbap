@@ -55,10 +55,12 @@ class _AddFavouritesScreenState extends State<AddFavouritesScreen> {
                   label: const Text('Restaurants'),
                 ),
                 items: [
-                  const DropdownMenuItem(child: Text('Bus'), value: 'bus'),
-                  const DropdownMenuItem(child: Text('Grab'), value: 'grab'),
-                  const DropdownMenuItem(child: const Text('MRT'), value: 'mrt'),
-                  const DropdownMenuItem(child: const Text('Taxi'), value: 'taxi'),
+                  const DropdownMenuItem(child: Text('Genki Sushi'), value: 'genki sushi'),
+                  const DropdownMenuItem(child: Text('Thai Dynasty'), value: 'thai dynasty'),
+                  const DropdownMenuItem(child: const Text('Shake Shack'), value: 'shake shack'),
+                  const DropdownMenuItem(child: const Text('Starbucks'), value: 'starbucks'),
+                  const DropdownMenuItem(child: const Text('Koi'), value: 'koi'),
+                  const DropdownMenuItem(child: const Text('Astons Specialties'), value: 'astons specialties'),
                 ],
                 validator: (value){
                   if(value == null){
